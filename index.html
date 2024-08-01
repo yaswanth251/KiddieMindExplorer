@@ -1,0 +1,26 @@
+<!doctype html>
+<html> 
+ <head> 
+  <title>KiddieMind Explorer</title>
+  <link rel="stylesheet" href="./style.css">
+ </head> 
+ <body> 
+  <div>
+		<span><a href="../colors.html">Exit</a></span>
+	</div>
+  <div id="box" onclick="generateColor()"> <button onclick="generateColor()">Click Here</button> 
+   <p id="value">Color Code : rgb(164,71,116)</p>
+  </div> 
+  <script>
+    
+  function generateColor() {
+   var r = Math.floor(Math.random() * 256);
+   var g = Math.floor(Math.random() * 256);
+   var b = Math.floor(Math.random() * 256);
+   var rgb = "rgb(" + r + "," + g + "," + b + ")";
+   document.body.style.backgroundColor = rgb;
+   document.getElementById("value").innerHTML = "Color Code : "+rgb;
+   }
+ </script> 
+ </body>
+</html>
